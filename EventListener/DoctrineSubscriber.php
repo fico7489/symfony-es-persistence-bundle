@@ -9,7 +9,7 @@ use Doctrine\ORM\Event\PostUpdateEventArgs;
 use Doctrine\ORM\Event\PreRemoveEventArgs;
 use Doctrine\ORM\Events;
 use SymfonyEs\Bundle\PersistenceBundle\Dto\UpdatedEntityDto;
-use SymfonyEs\Bundle\PersistenceBundle\Util\EntityHelper;
+use SymfonyEs\Bundle\PersistenceBundle\Service\Util\EntityHelper;
 
 #[AsDoctrineListener(event: Events::postPersist)]
 #[AsDoctrineListener(event: Events::postUpdate)]

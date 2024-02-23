@@ -5,3 +5,5 @@ parameters:
         - ./
     excludePaths:
         - ./vendor
+        - ./var
+

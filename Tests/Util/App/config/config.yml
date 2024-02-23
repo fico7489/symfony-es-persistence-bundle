@@ -1,0 +1,14 @@
+framework:
+    secret: "test"
+    test: ~
+
+doctrine:
+    dbal:
+        driver: "pdo_sqlite"
+        path:   "%kernel.cache_dir%/../database.db3"
+
+    orm:
+        mappings:
+            Test:
+                dir: '%kernel.project_dir%/'
+                prefix: 'SymfonyEs\Bundle\PersistenceBundle\Tests\Util\Entity'

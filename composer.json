@@ -13,18 +13,24 @@
         "doctrine/doctrine-bundle": "*",
         "doctrine/orm": "*",
         "doctrine/common": "*",
-        "symfony/http-kernel": "*"
+        "symfony/http-kernel": "*",
+        "symfony/yaml": "*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "*",
         "phpstan/phpstan": "*",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "10.*"
     },
     "autoload": {
         "psr-4": { "SymfonyEs\\Bundle\\PersistenceBundle\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SymfonyEs\\Bundle\\PersistenceBundle\\Tests\\": "Tests"
+        }
     },
     "config": {
         "allow-plugins": {

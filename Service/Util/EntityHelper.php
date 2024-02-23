@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyEs\Bundle\PersistenceBundle\Util;
+namespace SymfonyEs\Bundle\PersistenceBundle\Service\Util;
 
 use Doctrine\Common\Util\ClassUtils;
 use Doctrine\ORM\EntityManagerInterface;
