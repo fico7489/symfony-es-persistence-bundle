@@ -10,8 +10,9 @@
         }
     ],
     "require": {
-        "doctrine/doctrine-bundle": "2.*",
-        "symfony/http-kernel": "6.*"
+        "doctrine/doctrine-bundle": "*",
+        "doctrine/orm": "*",
+        "symfony/http-kernel": "*"
     },
     "autoload": {
         "psr-4": { "SymfonyEs\\Bundle\\PersistenceBundle\\": "" },
