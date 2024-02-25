@@ -1,4 +1,7 @@
 services:
-    Fico7489\PersistenceBundle\EventListener\DoctrineListener:
+    _defaults:
         autowire: true
         autoconfigure: true
+
+    Fico7489\PersistenceBundle\:
+        resource: '../src/*'

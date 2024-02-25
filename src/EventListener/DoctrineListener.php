@@ -9,6 +9,7 @@ use Doctrine\ORM\Event\PostUpdateEventArgs;
 use Doctrine\ORM\Event\PreRemoveEventArgs;
 use Doctrine\ORM\Events;
 use Fico7489\PersistenceBundle\Dto\UpdatedEntity;
+use Fico7489\PersistenceBundle\Event\UpdatedEntities;
 use Fico7489\PersistenceBundle\Util\EntityHelper;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
@@ -49,7 +50,7 @@ class DoctrineListener
     public function doFlush(): void
     {
         if (count($this->entitiesDto)) {
-            $this->eventDispatcher->dispatch($this->entitiesDto);
+            $this->eventDispatcher->dispatch(new UpdatedEntities($this->entitiesDto));
         }
 
         // reset var

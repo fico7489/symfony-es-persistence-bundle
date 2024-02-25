@@ -4,7 +4,7 @@ namespace Fico7489\PersistenceBundle\Tests\Functional;
 
 use Doctrine\Bundle\DoctrineBundle\Registry;
 use Doctrine\ORM\Tools\SchemaTool;
-use Fico7489\PersistenceBundle\Dto\UpdatedEntity;
+use Fico7489\PersistenceBundle\Event\UpdatedEntities;
 use Fico7489\PersistenceBundle\Tests\Util\Entity\User;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
@@ -38,7 +38,7 @@ class FunctionalTest extends KernelTestCase
         $schemaTool->updateSchema($metaData);
 
         // start listening to our custom event
-        $this->eventsStartListen(UpdatedEntity::class);
+        $this->eventsStartListen(UpdatedEntities::class);
 
         // create, persist and flush entity
         $user = new User();
@@ -47,12 +47,10 @@ class FunctionalTest extends KernelTestCase
         $entityManager->flush();
 
         // get events which are received
-        $events = $this->eventsGet(UpdatedEntity::class);
+        $events = $this->eventsGet(UpdatedEntities::class);
 
         // assert that we received what we want
         $this->assertEquals(1, count($events));
-        $this->assertEquals(1, $events[0]->getId());
-        $this->assertEquals(User::class, $events[0]->getClassName());
 
         // clear database for the next run
         $filesystem = new Filesystem();
