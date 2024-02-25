@@ -36,3 +36,4 @@ class UpdatedEntityDto
         return $this->changedFields;
     }
 }
+
