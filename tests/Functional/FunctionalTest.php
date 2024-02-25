@@ -4,7 +4,7 @@ namespace Fico7489\PersistenceBundle\Tests\Functional;
 
 use Doctrine\Bundle\DoctrineBundle\Registry;
 use Doctrine\ORM\Tools\SchemaTool;
-use Fico7489\PersistenceBundle\Event\UpdatedEntity;
+use Fico7489\PersistenceBundle\Dto\UpdatedEntity;
 use Fico7489\PersistenceBundle\Tests\Util\Entity\User;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;

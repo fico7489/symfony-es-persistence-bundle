@@ -1,0 +1,7 @@
+parameters:
+    level: 3
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - ./src
+        - ./tests
+
