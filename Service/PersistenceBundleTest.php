@@ -6,6 +6,6 @@ class PersistenceBundleTest
 {
     public function test()
     {
-        return 'PersistenceBundleTest->test1234....';
+        return 'PersistenceBundleTest->test12345....';
     }
 }
