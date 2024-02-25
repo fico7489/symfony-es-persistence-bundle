@@ -1,15 +1,7 @@
 .idea
 var
-
 vendor/
 composer.lock
-phpunit.xml
-.php-cs-fixer.cache
-.php-cs-fixer.php
 .phpunit.result.cache
-composer.phar
-package.tar
-/packages.json
-/.phpunit
-
+.php-cs-fixer.cache
 

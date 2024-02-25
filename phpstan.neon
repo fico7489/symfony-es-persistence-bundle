@@ -1,9 +1,0 @@
-parameters:
-    level: 3
-    checkGenericClassInNonGenericObjectType: false
-    paths:
-        - ./
-    excludePaths:
-        - ./vendor
-        - ./var
-

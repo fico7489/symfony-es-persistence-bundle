@@ -1,12 +1,12 @@
 <?php
 
-namespace SymfonyEs\Bundle\PersistenceBundle\Tests\Util\App;
+namespace Fico7489\PersistenceBundle\Tests\Util\App;
 
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
+use Fico7489\PersistenceBundle\PersistenceBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
-use SymfonyEs\Bundle\PersistenceBundle\PersistenceBundle;
 
 class Kernel extends BaseKernel
 {
@@ -16,7 +16,7 @@ class Kernel extends BaseKernel
             new FrameworkBundle(),
             new DoctrineBundle(),
 
-            new PersistenceBundle()
+            new PersistenceBundle(),
         ];
     }
 

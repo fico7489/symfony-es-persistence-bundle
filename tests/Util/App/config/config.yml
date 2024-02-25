@@ -11,4 +11,4 @@ doctrine:
         mappings:
             Test:
                 dir: '%kernel.project_dir%/'
-                prefix: 'SymfonyEs\Bundle\PersistenceBundle\Tests\Util\Entity'
+                prefix: 'Fico7489\PersistenceBundle\Tests\Util\Entity'

@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyEs\Bundle\PersistenceBundle;
+namespace Fico7489\PersistenceBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

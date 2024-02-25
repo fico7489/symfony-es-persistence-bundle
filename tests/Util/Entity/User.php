@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyEs\Bundle\PersistenceBundle\Tests\Util\Entity;
+namespace Fico7489\PersistenceBundle\Tests\Util\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

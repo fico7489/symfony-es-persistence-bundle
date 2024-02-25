@@ -5,13 +5,12 @@
          bootstrap="vendor/autoload.php"
          colors="true">
     <php>
-        <ini name="error_reporting" value="-1" />
-        <server name="KERNEL_CLASS" value="SymfonyEs\Bundle\PersistenceBundle\Tests\Util\App\Kernel" />
+        <server name="KERNEL_CLASS" value="Fico7489\PersistenceBundle\Tests\Util\App\Kernel" />
     </php>
 
     <testsuites>
         <testsuite name="test">
-            <directory>./Tests/</directory>
+            <directory>./tests/</directory>
         </testsuite>
     </testsuites>
 </phpunit>

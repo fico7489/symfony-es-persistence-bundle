@@ -10,33 +10,22 @@
         }
     ],
     "require": {
-        "doctrine/doctrine-bundle": "*",
-        "doctrine/orm": "*",
-        "doctrine/common": "*",
-        "symfony/http-kernel": "*",
-        "symfony/yaml": "*"
+        "doctrine/doctrine-bundle": "2.*",
+        "doctrine/orm": "3.*",
+        "symfony/yaml": "7.*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "*",
-        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "3.*",
         "phpunit/phpunit": "10.*"
     },
     "autoload": {
-        "psr-4": { "SymfonyEs\\Bundle\\PersistenceBundle\\": "" },
-        "exclude-from-classmap": [
-            "/Tests/"
-        ]
+        "psr-4": {
+            "Fico7489\\PersistenceBundle\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
-            "SymfonyEs\\Bundle\\PersistenceBundle\\Tests\\": "Tests"
+            "Fico7489\\PersistenceBundle\\Tests\\": "tests/"
         }
-    },
-    "config": {
-        "allow-plugins": {
-            "php-http/discovery": false,
-            "symfony/runtime": true
-        }
-    },
-    "minimum-stability": "dev"
+    }
 }
